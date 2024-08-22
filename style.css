@@ -1,0 +1,224 @@
+.header{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 50%;
+}
+
+.profile{
+    top: -400px;
+    position: relative;
+    z-index: 1;
+}
+
+.container{
+    width : 95%;
+    /* display: ; */
+    background-color: gainsboro;
+    margin: auto;
+}
+
+.photo{
+    border-radius: 50%;
+    display: block;
+    border: 5px solid white;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    width: 250px;
+    /* animation: profile 5s ease;  */
+
+}
+
+.photo:hover{
+    /* width: 300px; */
+    transition: 2.5s ease all;
+    transform: scale(1.2);
+}
+.p_photo{
+    margin: auto;
+    background-color: blue;
+    
+}
+
+@keyframes profile {
+    0%{
+        margin-top: -250px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+@keyframes zoomin {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.desc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -350px;
+    text-transform: capitalize;
+}
+
+.friend:hover{
+    background-color: #1E2A5E;
+    color: white;
+    border-color: white;
+    /* border */
+}
+
+.friend img{
+    transition: transform 0.5s ease;
+}
+
+.friend:hover .fphoto{
+    /* width: 275px; */
+    transform: scale(1.2);
+}
+
+.friend:hover .bio{
+    margin-left: 10px;
+}
+
+.det{font-size: 45px;}
+.tag{font-size: 40px;}
+.det,.tag{
+    font-family: sans-serif;
+    color: #1E2A5E;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+.nama{
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #1E2A5E;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+     
+}
+
+.card{
+    width: 120px;
+    border-color: blue;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 15px;
+    padding: 5px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px black;
+    /* background-color: blue; */
+    /* float: left; */
+}
+
+.friend{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+.fphoto{
+    border-radius: 15px;
+    width: 250px;
+}
+
+.bio{
+    width: 100%;
+    font-size: 25px;
+}
+
+.tb-data{
+    width: 100%;
+    border: 1;
+    margin-left: 15px;
+    border-spacing: 10px;
+}
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    /* background-color: black; */
+}
+a {
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .profile{
+        margin-top: 275px;
+    }
+    .det{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .nama{
+        font-size: 20px;
+    }
+    .photo{
+        border-radius: 50%;
+        display: block;
+        margin-top: 0px;
+        border: 2px solid white;
+        width: 75px;
+        
+    
+    }
+    .desc{
+        font-size: 10px;
+        width: 350px;
+        margin: auto;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: -375px;
+    }
+    .tag{
+        /* margin-top: 25px; */
+        /* margin-bottom: 25px; */
+        font-size: 15px;
+        width: 100%;
+    }
+    .fphoto{
+        width: 100px;
+    }
+    .bio{
+        font-size: 10px;
+    }
+    .td{
+        width: 50px;
+    }
+    
+  }
+
